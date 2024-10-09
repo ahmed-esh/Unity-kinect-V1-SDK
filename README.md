@@ -1,5 +1,5 @@
 # Unity-kinect-V1-SDK
-I took this Plugin in the Unity Asset store [MS Kinct SDK](https://api.unity.com/v1/oauth2/authorize?client_id=asset_store_v2&locale=en_US&redirect_uri=https%3A%2F%2Fassetstore.unity.com%2Fauth%2Fcallback%3Fredirect_to%3D%252Fpackages%252Ftools%252Fkinect-with-ms-sdk-7747%253Fsrsltid%253DAfmBOopA1aaeez98IPuPzgxZvRT6qKVBcIIulHjI4n2Xcqr0dIFwExm9&response_type=code&state=6cdc5f92-bb68-44d0-a2ef-3bd15385ee8f) and fixed to work on newer unity versions
+I took this Plugin in the Unity Asset store [MS Kinect SDK](https://api.unity.com/v1/oauth2/authorize?client_id=asset_store_v2&locale=en_US&redirect_uri=https%3A%2F%2Fassetstore.unity.com%2Fauth%2Fcallback%3Fredirect_to%3D%252Fpackages%252Ftools%252Fkinect-with-ms-sdk-7747%253Fsrsltid%253DAfmBOopA1aaeez98IPuPzgxZvRT6qKVBcIIulHjI4n2Xcqr0dIFwExm9&response_type=code&state=6cdc5f92-bb68-44d0-a2ef-3bd15385ee8f) and fixed to work on newer unity versions
 
 There is a working Kinect V2 unity SDK that's made by Microsoft [here](https://learn.microsoft.com/en-us/windows/apps/design/devices/kinect-for-windows)
 but to my knowledge, there isn't (I couldn't find) an SDK for the Kinect V1 for Unity that works for the newer versions of Unity (newer than Unity 5.0 V 2018.3 )
@@ -19,7 +19,7 @@ Before using this project, make sure you have the following:
 - Kinect for Windows SDK v1.8
 - Unity (version 2018.3 or higher)
 - Kinect hardware (Kinect V1 sensor)
-- The Orginal asset from unity store [MS Kinct SDK](https://api.unity.com/v1/oauth2/authorize?client_id=asset_store_v2&locale=en_US&redirect_uri=https%3A%2F%2Fassetstore.unity.com%2Fauth%2Fcallback%3Fredirect_to%3D%252Fpackages%252Ftools%252Fkinect-with-ms-sdk-7747%253Fsrsltid%253DAfmBOopA1aaeez98IPuPzgxZvRT6qKVBcIIulHjI4n2Xcqr0dIFwExm9&response_type=code&state=6cdc5f92-bb68-44d0-a2ef-3bd15385ee8f) not required but if you want to look at the example scenes 
+- The Orginal asset from the unity store [MS Kinect SDK](https://api.unity.com/v1/oauth2/authorize?client_id=asset_store_v2&locale=en_US&redirect_uri=https%3A%2F%2Fassetstore.unity.com%2Fauth%2Fcallback%3Fredirect_to%3D%252Fpackages%252Ftools%252Fkinect-with-ms-sdk-7747%253Fsrsltid%253DAfmBOopA1aaeez98IPuPzgxZvRT6qKVBcIIulHjI4n2Xcqr0dIFwExm9&response_type=code&state=6cdc5f92-bb68-44d0-a2ef-3bd15385ee8f) not required but if you want to look at the example scenes 
 
 ### Installation
 
@@ -30,6 +30,12 @@ Before using this project, make sure you have the following:
 2. Open the project in Unity.
 3. Set up your Kinect sensor according to the Kinect for Windows SDK v1.8 documentation.
 4. Test the sample scene provided in the assets to ensure everything is working correctly. Make sure you swap the original scripts folder, with this repo's scripts folder.
+
+## Quick set up
+1. import a 3d model with rigs 
+2. attach [AvatarControllerClassic.cs](https://github.com/ahmed-esh/Unity-kinect-V1-SDK/blob/main/Scripts/AvatarControllerClassic.cs) to the model and manually match the rigs to the script see photo:
+3. attach [KinectManager.cs](https://github.com/ahmed-esh/Unity-kinect-V1-SDK/blob/main/Scripts/KinectManager.cs) to your Main Camera
+4. Run the scene and your model should react to your movement, from here it is all you!  
 
 ## Features
 
@@ -85,15 +91,12 @@ Key features:
 
 ### GestureController.cs
 
-This script allows the developer to define custom gestures for controlling game actions. Using the skeleton and hand tracking data, it detects predefined movements and triggers in-game events.
+This script allows the developer to define custom gestures for controlling game actions. Using the skeleton and hand-tracking data, it detects predefined movements and triggers in-game events.
 
 Key functions:
 - **RecognizeGesture()**: Identifies specific gesture patterns from skeleton data.
 - **ExecuteAction()**: Triggers Unity actions based on recognized gestures.
 
-## Example Scene
-
-The SDK includes a sample Unity scene that demonstrates basic Kinect functionality. This scene shows how to initialize the Kinect sensor, display the color and depth streams, and track a user's skeleton for interaction.
 
 ## Troubleshooting
 
@@ -104,3 +107,4 @@ The SDK includes a sample Unity scene that demonstrates basic Kinect functionali
 ## Credits
 
 - Original project by [Rumen Filkov](https://github.com/rfilkov).
+

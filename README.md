@@ -1,5 +1,5 @@
 # Unity-kinect-V1-SDK
-I took this Plugin in the Unity Asset store [MS Kinect SDK](https://api.unity.com/v1/oauth2/authorize?client_id=asset_store_v2&locale=en_US&redirect_uri=https%3A%2F%2Fassetstore.unity.com%2Fauth%2Fcallback%3Fredirect_to%3D%252Fpackages%252Ftools%252Fkinect-with-ms-sdk-7747%253Fsrsltid%253DAfmBOopA1aaeez98IPuPzgxZvRT6qKVBcIIulHjI4n2Xcqr0dIFwExm9&response_type=code&state=6cdc5f92-bb68-44d0-a2ef-3bd15385ee8f) and fixed to work on newer unity versions
+I took this Plugin in the Unity Asset store [MS Kinect SDK](https://api.unity.com/v1/oauth2/authorize?client_id=asset_store_v2&locale=en_US&redirect_uri=https%3A%2F%2Fassetstore.unity.com%2Fauth%2Fcallback%3Fredirect_to%3D%252Fpackages%252Ftools%252Fkinect-with-ms-sdk-7747%253Fsrsltid%253DAfmBOopA1aaeez98IPuPzgxZvRT6qKVBcIIulHjI4n2Xcqr0dIFwExm9&response_type=code&state=6cdc5f92-bb68-44d0-a2ef-3bd15385ee8f) and fixed it to work on newer unity versions
 
 There is a working Kinect V2 unity SDK that's made by Microsoft [here](https://learn.microsoft.com/en-us/windows/apps/design/devices/kinect-for-windows)
 but to my knowledge, there isn't (I couldn't find) an SDK for the Kinect V1 for Unity that works for the newer versions of Unity (newer than Unity 5.0 V 2018.3 )

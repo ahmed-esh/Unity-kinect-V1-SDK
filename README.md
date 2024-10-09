@@ -4,3 +4,5 @@ I took this Plugin in the Unity Assest store [MS Kinct SDK](https://api.unity.co
 There is a working Kinect V2 unity SDK that's made by Microsoft here()
 but to my knowledge I coudn't find an SDK for the Kinect V1 for Unity that works for the newer version of Unity (newer than V 2018.3 )
 
+thanks to the original maker Rumen F, for keeping a clear documentation in the code so I was able to create this edration. 
+Read more about the orginal SDK here: https://rfilkov.com/2013/12/16/kinect-with-ms-sdk/
